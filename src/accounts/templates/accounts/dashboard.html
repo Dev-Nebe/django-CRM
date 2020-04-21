@@ -4,8 +4,8 @@
 
 {% include 'accounts/status.html' %}
 
-<div class="row">
-  <div class="col-md-5">
+<div class="row mt-1">
+  <div class="col-md-5 mt-3">
     <h5>CUSTOMERS: {{total_number_customers}}</h5>
     <hr />
     <div class="card card-body">
@@ -34,15 +34,10 @@
     </div>
   </div>
 
-  <div class="col-md-7">
+  <div class="col-md-7 mt-3">
     <h5>LAST 5 ORDERS</h5>
     <hr />
     <div class="card card-body">
-      <a
-        class="btn btn-primary btn-sm btn-block"
-        href="{% url 'create_order' %}"
-        >Create Order</a
-      >
       <table class="table table-sm">
         <tr>
           <th>Product</th>
